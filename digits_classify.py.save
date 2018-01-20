@@ -1,0 +1,10 @@
+from sklearn import datasets, svm, metrics, externals
+
+digits = datasets.load_digits()
+
+n_samples = len(digits.images)
+data = digits.images.reshape((n_samples, -1))
+
+classifier = svm.SVC()
+
+classifier.fit(data[n_samples 
